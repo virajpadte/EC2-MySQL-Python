@@ -16,6 +16,8 @@ Step 3: Install dependencies:
 pip install -r requirements.txt
 
 Step 4: Make changes in the connection string in both db_test_fetch.py and db_test_insert.py
-"<type db server IP>","<type username>","<type password>","<type database name>"
+<pre>
+db server IP, username>, password, database name
+</pre>
 
 
