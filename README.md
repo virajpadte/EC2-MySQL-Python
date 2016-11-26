@@ -24,6 +24,11 @@ Step 5: run the python samples:
 python db_test_fetch.py 
 python db_test_insert.py
 
+Warning:
+
+This workflow/ approach is not secure as it is vunerable to DOS, SQL injection etc.
+Make use of server side php request handler for a more secured approach.
+-- Words of wisdom by Mayank Ambaliya
 
 
 
