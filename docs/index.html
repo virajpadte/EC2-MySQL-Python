@@ -46,7 +46,7 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>Introduction</h2>
 										</header>
 										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
 										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
@@ -62,8 +62,11 @@
 						<!-- First Section -->
 							<section id="prereq" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Pre-requisitives</h2>
 								</header>
+								<p>Make sure you have an EC2 instance up and running</br>
+									You have allowed inbound traffic on port 3306</p>
+								<!--
 								<ul class="features">
 									<li>
 										<span class="icon major style1 fa-code"></span>
@@ -86,15 +89,40 @@
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
+								-->
 							</section>
 
 						<!-- Second Section -->
 							<section id="proc" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									<h2>Procedure</h2>
+									<!--<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
 									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									-->
 								</header>
+								<pre>
+
+								Step 1: Install MySQL on the EC2 instance:
+								This LAMP tutorial comes handy you can just go ahead and install mysql:
+								http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html
+
+								Step 2: Clone the repository:
+								git clone https://github.com/virajpadte/EC2-MySQL-Python.git
+
+								Step 3: Install dependencies:
+								pip install -r requirements.txt
+
+								Step 4: Make changes in the connection string in both db_test_fetch.py and db_test_insert.py
+								<pre>
+								db server IP, username, password, database name
+								</pre>
+
+								Step 5: run the python samples:
+								python db_test_fetch.py 
+								python db_test_insert.py
+
+								</pre>
+								<!--
 								<ul class="statistics">
 									<li class="style1">
 										<span class="icon fa-code-fork"></span>
@@ -123,9 +151,10 @@
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
+								-->
 							</section>
 
-						<!-- Get Started -->
+						<!-- Warnings -->
 							<section id="warn" class="main special">
 								<header class="major">
 									<h2>Warnings</h2>
